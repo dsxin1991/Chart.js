@@ -98,7 +98,7 @@ myLineChart.generateLegend();
 
 ## .getElementAtEvent(e)
 
-Calling `getElementAtEvent(event)` on your Chart instance passing an argument of an event, or jQuery event, will return the single element at the event position. If there are multiple items within range, only the first is returned
+Calling `getElementAtEvent(event)` on your Chart instance passing an argument of an event, or jQuery event, will return the single element at the event position. If there are multiple items within range, only the first is returned. The value returned from this method is an array with a single parameter. An array is used to keep a consistent API between the `get*AtEvent` methods.
 
 ```javascript
 myLineChart.getElementAtEvent(e);
